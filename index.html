@@ -1,1 +1,37 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>My Fitness Tracker</h1>
+
+        <section>
+            <h2>🏋️‍♀️ Тренировки</h2>
+            <input type="text" id="exerciseInput" placeholder="Добавь упражнение"/>
+            <button onclick="addExercise()">Добавить</button>
+            <ul id="exerciseList"></ul>
+        </section>
+
+        <section>
+            <h2>🍽 Меню</h2>
+            <input type="text" id="mealInput" placeholder="Добавь блюдо"/>
+            <button onclick="addMeal()">Добавить</button>
+            <ul id="mealList"></ul>
+        </section>
+
+        <section>
+            <h2>💧 Вода</h2>
+            <p>Выпито: <span id="waterAmount">0</span> мл</p>
+            <button onclick="addWater(250)">+250 мл</button>
+            <button onclick="resetWater()">Сбросить</button>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
